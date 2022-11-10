@@ -286,6 +286,22 @@ input[tpye=button] {
 }
 
 /*-------------------------------------- About Page --------------------------------------- */
+.mission {
+    background-color: #527158;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
+/*-------------------------------------- Work Page ---------------------------------------- */
+.experiences {
+    background-color: #527158;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
+/*------------------------------------ Media Screen: Tablets ------------------------------ */
 
