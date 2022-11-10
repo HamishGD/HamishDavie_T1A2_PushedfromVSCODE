@@ -59,6 +59,23 @@ address {
     margin: 50px 0;
 }
 
+
+/* ----- Mouse Links ----- */
+
+a:link {
+    color: #e2e3ed;
+    text-decoration: none;
+}
+a:visited {
+    color: #e2e3ed;
+    text-decoration: none;
+}
+a:hover {
+   color: #FFB6C1;
+   text-decoration: none;
+}
+
+
 /*------------------------------ Base Header - Footer Styles ------------------------------ */
 header,
 footer {
