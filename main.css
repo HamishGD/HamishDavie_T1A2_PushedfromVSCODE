@@ -391,7 +391,6 @@ aside .content-wrapper .form {
 aside .form-description p {
     font-size: 1.1em;
 }
-}
 
 /* ----- Features Content ----- */
 .features h2 {
@@ -516,9 +515,17 @@ footer.contact h4 {
 
 .experiences h4,
 .experiences p {
-    font-size: .875em;
-    line-height: 1.2;;
+    font-size: 1.2em;
+    line-height: 1.2;
 }
+
+.experiences-content-warning {
+    color: #FFA500;
+    font-style: italic;
+    font-size: 0.5em;
+}
+}
+
 
 /* --------------- Media Screen: Tablet ----------------- */
 
@@ -713,8 +720,32 @@ footer.contact h4 {
     .contact h4 {
         font-size: 2.5em;
     }
+
+/* ----- Work Page ----- */
+.experiences .content-wrapper {
+    justify-content: space-between;
 }
 
+.experiences-content {
+    flex-basis: 45%;
+}
+
+.experiences h2 {
+    width: 100%;
+}
+
+.experiences h4,
+.experiences p {
+    font-size: 1.3em;
+    line-height: 1.2;
+}
+
+.experiences-content-warning {
+    color: #FFA500;
+    font-style: italic;
+    font-size: 0.8em;
+}
+}
 
 
 /* --------------- Media Screen: Desktop ----------------- */
@@ -839,7 +870,7 @@ footer.contact h4 {
     }
 
 
-    /* ----------------------- About Page ---------------------- */
+/* ----------------------- About Page ---------------------- */
     .mission h2,
     .contact .content-wrapper h2 {
         width: 95%;
@@ -850,16 +881,35 @@ footer.contact h4 {
         font-size: 2em;
     }
 
-    /* ----------------------- Work Page ---------------------- */
-    .experiences h2 {
-        width: 100%;
-         font-size: 3em;
-    }
+/* ----------------------- Work Page ---------------------- */
+.experiences .content-wrapper {
+    justify-content: space-between;
+}
 
-    .experiences h4,
-    .experiences p {
-        font-size: 1.2em;
-        line-height: 1;
-    }
+.experiences-content {
+    flex-basis: 45%;
+}
 
+.experiences h2 {
+    width: 100%;
+}
+
+.experiences h4,
+.experiences p {
+    font-size: 1.8em;
+    line-height: 1.2;
+}
+
+.experiences-content-warning {
+    color: #FFA500;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 55%;
+    height: 0;
+}
 }
