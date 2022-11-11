@@ -151,7 +151,7 @@ footer p {
 
 footer .content-wrapper {
     width: 55%;
-    margin: 50px 0;
+    margin: 50px;
     background-color: palevioletred;
 }
 
@@ -167,7 +167,7 @@ footer .social-icons {
 }
 
 footer .social-icons p {
-    background-color: #527158;
+    background-color: palevioletred;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -221,12 +221,12 @@ aside .form {
 input[type=text] {
     box-sizing: border-box;
     width: 100%;
-    color: orange;
+    color: #FFA500;
     font-style: italic;
     padding: 1em;
 }
 
-input[tpye=button] {
+input[type=button] {
     width: 100%;
     padding: 20px 0;
     margin-top: 20px;
@@ -256,7 +256,7 @@ input[tpye=button] {
 
 .features article {
     width: 63%;
-    margin: 30px 0;
+    margin: 30px;
 }
 
 .features .features-items {
@@ -283,7 +283,6 @@ input[tpye=button] {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    
 }
 
 .reviews h2 {
@@ -316,7 +315,7 @@ input[tpye=button] {
     flex-flow: row wrap;
 }
 
-/*------------------------------------ Media Screen: Mobile to Tablets ------------------------------ */
+/*------------------------------------ Media Screen: Mobile ------------------------------ */
 
 /* ----- General Styles ----- */
 
@@ -329,12 +328,12 @@ input[tpye=button] {
 
 h2 { 
     font-size: 2em;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 h3 {
     font-size: 2em;
-    line-height: 1.25;
+    line-height: 1;
 }
 
 /* ----- Header ----- */
@@ -370,7 +369,7 @@ header nav ul {
 }
 
 .hero-area h1 {
-    font-size: 2em;
+    font-size: 4em;
     line-height: 1;
     margin: 0;
 }
@@ -389,6 +388,11 @@ aside .content-wrapper .form {
     margin: 0;
 }
 
+aside .form-description p {
+    font-size: 1.1em;
+}
+}
+
 /* ----- Features Content ----- */
 .features h2 {
     margin-bottom: 20px;
@@ -399,7 +403,7 @@ aside .content-wrapper .form {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    flex-basis: 60%;
+    font-size: 1.5em;
 }
 
 .features .features-items-description {
@@ -428,11 +432,16 @@ aside .content-wrapper .form {
 .reviews h3 {
     width: 70%;
     margin: 0;
+    font-size: 1.6em;
+}
+
+.reviews p {
+    font-size: 1.1em;
 }
 
 /* ----- Footer Content ----- */
 footer .content-wrapper {
-    width: 65%;
+    width: 100%;
     margin: 100px 0;
 }
 
@@ -440,7 +449,7 @@ footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 footer .contact {
@@ -448,16 +457,16 @@ footer .contact {
 }
 
 footer h4 {
-    font-size: 1.5em;
-    margin-bottom: 30px;
+    font-size: 1.4em;
+    margin-bottom: 10px;
 }
 
 footer p {
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 footer .social-icons {
-    width: 8em;
+    width: 6em;
     justify-content: space-between;
 }
 
@@ -468,26 +477,27 @@ footer .copyright {
 /* ----- About Page ----- */
 .mission-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .mission-content p {
     width: 45%;
+    font-size: 1.1em;
 }
 
 .contact-section .contact-wrapper h2 {
     width: 80%;
 }
 
-.contact-content {
+footer.contact {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.contact-content h4 {
+footer.contact h4 {
     font-size: 1.5em;
 }
 
@@ -510,30 +520,223 @@ footer .copyright {
     line-height: 1.2;;
 }
 
+/* --------------- Media Screen: Tablet ----------------- */
+
+@media only screen and (min-width:768px) {
+
+    .content-wrapper {
+        max-width: 1200px;
+        margin: 100px 0;
+    }
+
+    h2 {
+        font-size: 3em;
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size: 3em;
+        line-height: 1.3;
+    }
+
+    /* ----- Header ----- */
+    header {
+        justify-content: space-around;
+        padding: 25px;
+        font-size: 1.3em;
+    }
+
+    header .content-wrapper {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header figure {
+        width: 50%;
+    }
+
+    header nav {
+        width: 60%;
+    }
+
+    header nav ul {
+        justify-content: space-between;
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    /* ----- Hero Area ----- */
+    .hero-area {
+        min-height: 600px;
+    }
+
+    .hero-area h1 {
+        font-size: 4em;
+        line-height: 1;
+        margin: 0;
+    }
+
+    /* ----- Aside Content ----- */
+    aside .content-wrapper {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width: 49%;
+        margin: 0;
+    }
+
+    aside .content-wrapper .form-description p {
+        font-size: 1.3em;
+    }
+
+    /* ----- Features Content ----- */
+    .features h2 {
+        margin-bottom: 30px;
+        font-size: 2.5em;
+    }
+
+    .features article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        flex-basis: 60%;
+        font-size: 1.8em;
+    }
+
+    .features .features-items-description {
+        width: 60%;
+    }
+
+    .features article p {
+        font-size: 0.8em;
+    }
+
+    .features i {
+        margin-bottom: 30px;
+    }
+
+    /* ----- Reviews Content ----- */
+    .reviews article {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .reviews h2 {
+        width: 80%;
+    }
+
+    .reviews article figure,
+    .reviews article div {
+        width: 49%;
+    }
+
+    .reviews article p {
+        font-size: 1.4em;
+    }
+
+    .reviews h2 {
+        font-size: 2.35em;
+    }
+
+    .reviews h3 {
+        width: 70%;
+        margin: 0;
+        font-size: 2em;
+    }
+
+    /* ----- Footer Content ----- */
+    footer .content-wrapper {
+        width: 100%;
+        margin: 100px 0;
+    }
+
+    footer .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+    }
+
+    footer h4 {
+        font-size: 1.4em;
+        margin-bottom: 30px 0;
+    }
+
+    footer p {
+        line-height: 1.5;
+        font-size: 1.2em;
+    }
+
+    footer .social-icons {
+        width: 6em;
+        justify-content: space-between;
+    }
+
+    footer .copyright {
+        width: 100%;
+    }
+
+    /* ----- About Page ----- */
+    .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .mission-content p {
+        width: 45%;
+    }
+
+    .contact-section .contact-wrapper h2 {
+        width: 80%;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .contact h4 {
+        font-size: 2.5em;
+    }
 }
 
 
 
-
-/* ----- Media Screen: Tablet to Desktop ----- */
+/* --------------- Media Screen: Desktop ----------------- */
 
 @media only screen and (min-width:1200px) {
 
+    .content-wrapper {
+        max-width: none;
+    }
+    
     header {
         padding: 15px 0;
-    }
-
-    .content-wrapper {
-        max-width: 960px;
+        font-size: 1.7em;
     }
 
     h2 {
-        font-size: 2.25em;
+        font-size: 3em;
     }
 
     h3,
     h4 {
-        font-size: 1.9em;
+        font-size: 3em;
     }
 
     p {
@@ -543,8 +746,8 @@ footer .copyright {
 
     /* ----- Hero Content ----- */
     .hero-area h1 {
-        font-size: 3.5em;
-        width: 80%;
+        font-size: 5em;
+        width: 50%;
     }
 
     /* ----- Aside Content ----- */
@@ -557,8 +760,8 @@ footer .copyright {
         width: 80%;
     }
 
-    .form-description p {
-        font-size: 1.2em;
+    aside .content-wrapper .form-description p {
+        font-size: 1.65em;
     }
 
     /* ----- Features Content ----- */
@@ -570,27 +773,80 @@ footer .copyright {
         flex-basis: 50%;
     }
 
-    /* ----- Reviews Content ----- */
-    .reviews h2 {
-        padding-bottom: 25px;
+    .features article p {
+        font-size: 1em;
     }
 
-    .reviews article div {
+    /* ----- Reviews Content ----- */
+    .reviews article {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .reviews h2 {
+        padding-bottom: 25px;
+        font-size: 3em;
         width: 80%;
     }
 
-    footer h4 {
-        font-size: 1.9em;
+    .reviews h3 {
+        font-size: 2.3em;
     }
+
+    .reviews article figure,
+    .reviews article div {
+        width: 49%;
+    }
+
+    .reviews article p {
+        font-size: 1.65em;
+    }
+
+     /* ----- Footer Content ----- */
+     footer .content-wrapper {
+        width: 100%;
+        margin: 100px 0;
+    }
+
+    footer .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+    }
+
+    footer h4 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    footer p {
+        line-height: 1.5;
+        font-size: 1.3em;
+    }
+
+    footer .social-icons {
+        width: 6em;
+        justify-content: space-between;
+    }
+
+    footer .copyright {
+        width: 100%;
+    }
+
 
     /* ----------------------- About Page ---------------------- */
     .mission h2,
-    .contact-section .content-wrapper h2 {
+    .contact .content-wrapper h2 {
         width: 95%;
         font-size: 3em;
     }
 
-    .contact-content h4 {
+    .contact h4 {
         font-size: 2em;
     }
 
@@ -605,9 +861,5 @@ footer .copyright {
         font-size: 1.2em;
         line-height: 1;
     }
-
-
-
-
 
 }
