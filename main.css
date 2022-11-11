@@ -6,7 +6,7 @@ html {
 body {
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
-    color: #e2e3ed;
+    color: palevioletred;
     text-align: left;
 }
 
@@ -27,6 +27,7 @@ h2 {
     font-weight: 500;
     font-size: 1.875em;
     margin: 0;
+    color: #e2e3ed;
 }
 
 h3, 
@@ -35,6 +36,8 @@ h4 {
     font-weight: 500;
     font-size: 1.125em;
     margin: 20px 0;
+    color: #e2e3ed;
+    
 }
 
 p {
@@ -122,6 +125,8 @@ header nav {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    overflow: hidden;
+
 }
 
 header nav ul {
@@ -137,6 +142,7 @@ header nav ul li {
 footer {
     text-align: center;
     flex-direction: column;
+    color: #e2e3ed;
 }
 
 footer p {
@@ -146,10 +152,12 @@ footer p {
 footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
+    background-color: palevioletred;
 }
 
 footer .contact {
     margin-bottom: 50px;
+    background-color: palevioletred;
 }
 
 footer .social-icons {
@@ -174,6 +182,7 @@ footer .social-icons p i {
 
 footer .copyright {
     margin: 20px 0;
+    color: palevioletred;
 }
 
 /*-------------------------------- Mobile Styles - HomePage ------------------------------- */
@@ -212,7 +221,7 @@ aside .form {
 input[type=text] {
     box-sizing: border-box;
     width: 100%;
-    color: #2a423a;
+    color: orange;
     font-style: italic;
     padding: 1em;
 }
@@ -232,7 +241,7 @@ input[tpye=button] {
 
 /* ----- Features ----- */
 .features {
-    background: url('img/videogames.jpg');
+    background: url('img/ps5.jpg');
     background-size: cover;
     background-position: center;
     min-height: 500px;
@@ -265,24 +274,28 @@ input[tpye=button] {
 .features p {
     text-align: center;
     margin: 0;
+    color: palevioletred;
 }
 
 /* ----- Reviews ----- */
 .reviews {
-    background-color: #2a423a;
+    background-color: #202322;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    
 }
 
 .reviews h2 {
     margin-bottom: 40px;
     line-height: 1;
+    color: #e2e3ed;
 }
 
 .reviews h3 {
     width: 55%;
     margin: 20px 0;
+    color: #e2e3ed;
 }
 
 /*-------------------------------------- About Page --------------------------------------- */
@@ -303,5 +316,145 @@ input[tpye=button] {
     flex-flow: row wrap;
 }
 
-/*------------------------------------ Media Screen: Tablets ------------------------------ */
+/*------------------------------------ Media Screen: Mobile to Tablets ------------------------------ */
 
+/* ----- General Styles ----- */
+
+@media only screen and (min-width:414px) {
+
+.content-wrapper {
+    max-width: 768px;
+    margin: 100px 0;
+}
+
+h2 { 
+    font-size: 2.25em;
+    line-height: 1.333;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+
+/* ----- Header ----- */
+header {
+    justify-content: space-around;
+    padding: 33px 0;
+}
+
+header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+}
+
+header figure {
+    width: 30%;
+}
+
+header nav {
+    width: 60%;
+}
+
+header nav ul {
+    justify-content: space-between;
+}
+
+}
+
+/* ----- Media Screen: Tablet to Desktop ----- */
+
+@media only screen and (min-width:1200px) {
+
+    header {
+        padding: 15px 0;
+    }
+
+    .content-wrapper {
+        max-width: 960px;
+    }
+
+    h2 {
+        font-size: 2.25em;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.9em;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.333;
+    }
+
+    /* ----- Hero Content ----- */
+    .hero-area h1 {
+        font-size: 3.5em;
+        width: 80%;
+    }
+
+    /* ----- Aside Content ----- */
+    aside .content-wrapper {
+        justify-content: space-around;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width: 80%;
+    }
+
+    .form-description p {
+        font-size: 1.2em;
+    }
+
+    /* ----- Features Content ----- */
+    .features h2 {
+        width: 90%;
+    }
+
+    .features article {
+        flex-basis: 50%;
+    }
+
+    /* ----- Reviews Content ----- */
+    .reviews h2 {
+        padding-bottom: 25px;
+    }
+
+    .reviews article div {
+        width: 80%;
+    }
+
+    footer h4 {
+        font-size: 1.9em;
+    }
+
+    /* ----------------------- About Page ---------------------- */
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 95%;
+        font-size: 3em;
+    }
+
+    .contact-content h4 {
+        font-size: 2em;
+    }
+
+    /* ----------------------- Work Page ---------------------- */
+    .experiences h2 {
+        width: 100%;
+         font-size: 3em;
+    }
+
+    .experiences h4,
+    .experiences p {
+        font-size: 1.2em;
+        line-height: 1;
+    }
+
+
+
+
+
+}
