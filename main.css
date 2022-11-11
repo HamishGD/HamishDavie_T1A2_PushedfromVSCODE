@@ -524,6 +524,13 @@ footer.contact h4 {
     font-style: italic;
     font-size: 0.5em;
 }
+
+.iframe-container {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
 }
 
 
@@ -745,6 +752,19 @@ footer.contact h4 {
     font-style: italic;
     font-size: 0.8em;
 }
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
 }
 
 
@@ -907,9 +927,9 @@ footer.contact h4 {
 }
 
 .iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 55%;
-    height: 0;
-}
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
 }
