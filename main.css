@@ -312,8 +312,8 @@ aside .form {
 background-color: #527158;
 display: flex;
 justify-content: center;
-align-items: center;
-flex-flow: row wrap;
+align-items: left;
+flex-flow: column;
 }
 
 /* ---------------- Blog Content Pages --------------- */
@@ -585,6 +585,15 @@ footer.contact h4 {
     justify-content: space-between;
 }
 
+.blog1-content, .blog2-content, .blog3-content, .blog4-content, .blog5-content {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: left;
+    width: 100%;
+}
+
 /* ----- Blog Content Pages ----- */
 .leftcolumn, .rightcolumn {
     width: 100%;
@@ -828,6 +837,15 @@ footer.contact h4 {
     justify-content: space-between;
 }
 
+.blog1-content, .blog2-content, .blog3-content, .blog4-content, .blog5-content {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: left;
+    width: 100%;
+}
+
 
 /* ---------------- Blog Content Pages --------------- */
 .leftcolumn, .rightcolumn {
@@ -870,6 +888,11 @@ footer.contact h4 {
     .hero-area h1 {
         font-size: 5em;
         width: 50%;
+    }
+
+    .hero-area {
+        max-width: 100%;
+        height: auto;
     }
 
     /* ----- Aside Content ----- */
@@ -1015,8 +1038,13 @@ footer.contact h4 {
     }
 
 /* --------------- Blog Main Page ------------------- */
-.blogs .content-wrapper {
-    justify-content: space-between;
+.blog1-content, .blog2-content, .blog3-content, .blog4-content, .blog5-content {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: left;
+    width: 100%;
 }
 
 /* ---------------- Blog Content Pages --------------- */
@@ -1025,7 +1053,6 @@ footer.contact h4 {
     padding: 0;
     font-size: 2.2em;
 }
-
 
 }
 /* ------------------------------------------- END OF ALL CSS ------------------------------------------------- */
