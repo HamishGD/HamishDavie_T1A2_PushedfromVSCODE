@@ -1,4 +1,4 @@
-/* ------------------------------------ General Styles ------------------------------------ */
+/* ---------------- General Styles ----------------------- */
 html {
     font-size: 16px;
 }
@@ -63,7 +63,7 @@ address {
 }
 
 
-/* ----- Mouse Links ----- */
+/* ------- Mouse Links ------ */
 
 a:link {
     color: #e2e3ed;
@@ -79,7 +79,7 @@ a:hover {
 }
 
 
-/*------------------------------ Base Header - Footer Styles ------------------------------ */
+/*---------------- Base Header - Footer Styles ------------------------- */
 header,
 footer {
     background-color: #202322;
@@ -184,9 +184,9 @@ footer .copyright {
     color: #DB7093;
 }
 
-/*-------------------------------- Mobile Styles - HomePage ------------------------------- */
+/*------------------------------------ Mobile Styles - HomePage ----------------------------------- */
 
-/* ----- Hero Area ----- */
+/* ---------- Hero Area ------------- */
 .hero-area {
     background: url('img/hamish_portrait.jpg');
     background-size: cover;
@@ -204,7 +204,7 @@ footer .copyright {
     line-height: 1.2;
 }
 
-/* ----- Aside ----- */
+/* -------- Aside ------------ */
 aside {
     background-color: #202322;
     display: flex;
@@ -230,7 +230,7 @@ aside .form {
     text-transform: uppercase;
 }
 
-/* ----- Features ----- */
+/* -------- Features ---------- */
 .features {
     background: url('img/ps5.jpg');
     background-size: cover;
@@ -268,7 +268,7 @@ aside .form {
     color: #DB7093;
 }
 
-/* ----- Reviews ----- */
+/* ------- Reviews ------------ */
 .reviews {
     background-color: #202322;
     display: flex;
@@ -288,7 +288,7 @@ aside .form {
     color: #e2e3ed;
 }
 
-/*-------------------------------------- About Page --------------------------------------- */
+/*--------------- About Page ------------------------ */
 .mission {
     background-color: #527158;
     display: flex;
@@ -297,7 +297,7 @@ aside .form {
     flex-flow: row wrap;
 }
 
-/*-------------------------------------- Work Page ---------------------------------------- */
+/*------------ Work Page ------------------------------ */
 .experiences {
     background-color: #527158;
     display: flex;
@@ -306,7 +306,7 @@ aside .form {
     flex-flow: row wrap;
 }
 
-/*--------------------------------------Blog Page------------------------------------------ */
+/*--------------------Blog Page-------------------- */
 .blogs {
 background-color: #527158;
 display: flex;
@@ -315,9 +315,9 @@ align-items: center;
 flex-flow: row wrap;
 }
 
-/*------------------------------------ Media Screen: Mobile ------------------------------ */
+/*------------------------------------------- Media Screen: Mobile ------------------------------------- */
 
-/* ----- General Styles ----- */
+/* ---------- General Styles ------------ */
 
 @media only screen and (min-width:414px) {
 
@@ -336,7 +336,7 @@ h3 {
     line-height: 1;
 }
 
-/* ----- Header ----- */
+/* -------------- Header ------------- */
 header {
     justify-content: space-around;
     padding: 33px 0;
@@ -363,7 +363,7 @@ header nav ul {
     display: none;
 }
 
-/* ----- Hero Area ----- */
+/* ----------- Hero Area --------- */
 .hero-area {
     min-height: 600px;
 }
@@ -374,7 +374,7 @@ header nav ul {
     margin: 0;
 }
 
-/* ----- Aside Content ----- */
+/* ------- Aside Content --------- */
 aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -392,7 +392,7 @@ aside .form-description p {
     font-size: 1.1em;
 }
 
-/* ----- Features Content ----- */
+/* ------ Features Content ----------- */
 .features h2 {
     margin-bottom: 20px;
 }
@@ -413,10 +413,11 @@ aside .form-description p {
     margin-bottom: 30px;
 }
 
-/* ----- Reviews Content ----- */
+/* --------- Reviews Content --------- */
 .reviews article {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .reviews h2 {
@@ -438,7 +439,7 @@ aside .form-description p {
     font-size: 1.1em;
 }
 
-/* ----- Footer Content ----- */
+/* ----- Footer Content ------- */
 footer .content-wrapper {
     width: 100%;
     margin: 100px 0;
@@ -473,16 +474,17 @@ footer .copyright {
     width: 100%;
 }
 
-/* ----- About Page ----- */
+/* ------- About Page -------- */
 .mission-content {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding-top: 10px;
+    align-items: left;
+    flex-flow: column wrap;
+    font-size: 1em;
 }
 
 .mission-content p {
-    width: 45%;
+    width: 100%;
     font-size: 1.1em;
 }
 
@@ -500,7 +502,7 @@ footer.contact h4 {
     font-size: 1.5em;
 }
 
-/* ----- Work Page ----- */
+/* -------- Work Page ---------- */
 .experiences .content-wrapper {
     justify-content: space-between;
 }
@@ -532,7 +534,7 @@ footer.contact h4 {
     flex-flow: row wrap;
 }
 
-/* ----- Blog Main Page ----- */
+/* -------- Blog Main Page ---------- */
 .blogs .content-wrapper {
     justify-content: space-between;
 }
@@ -561,7 +563,7 @@ footer.contact h4 {
 
 }
 
-/* --------------- Media Screen: Tablet ----------------- */
+/* ------------------------------------ Media Screen: Tablet ------------------------------- */
 
 @media only screen and (min-width:768px) {
 
@@ -668,6 +670,7 @@ footer.contact h4 {
     .reviews article {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
     }
 
     .reviews h2 {
@@ -699,14 +702,11 @@ footer.contact h4 {
         margin: 100px 0;
     }
 
-    footer .footer-content {
+    footer .contact {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-direction: column;
-    }
-
-    footer .contact {
         margin-bottom: 0;
     }
 
@@ -732,14 +732,15 @@ footer.contact h4 {
     /* ----- About Page ----- */
     .mission-content {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-evenly;
+        align-items: left;
+        flex-flow: column wrap;
         padding-top: 30px;
     }
 
     .mission-content p {
-        width: 45%;
-        font-size: 1.35em;;
+        width: 100%;
+        font-size: 1.35em;
     }
 
     .contact-section .contact-wrapper h2 {
@@ -793,10 +794,35 @@ footer.contact h4 {
         justify-content: center;
         flex-flow: row wrap;
     }
+
+    /* --------------- Blog Main Page ------------------- */
+.blogs .content-wrapper {
+    justify-content: space-between;
 }
 
 
-/* --------------- Media Screen: Desktop ----------------- */
+
+
+
+
+
+
+
+
+
+/* ---------------- Blog Content Pages --------------- */
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------- Media Screen: Desktop ------------------------------- */
 
 @media only screen and (min-width:1200px) {
 
@@ -860,6 +886,7 @@ footer.contact h4 {
     .reviews article {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
     }
     
     .reviews h2 {
@@ -887,14 +914,11 @@ footer.contact h4 {
         margin: 100px 0;
     }
 
-    footer .footer-content {
+    footer .contact {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-    }
-
-    footer .contact {
         margin-bottom: 0;
     }
 
@@ -921,8 +945,12 @@ footer.contact h4 {
 /* ----------------------- About Page ---------------------- */
     .mission h2,
     .contact .content-wrapper h2 {
-        width: 95%;
+        width: 100%;
         font-size: 3em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: left;
+        flex-flow: column wrap;
     }
 
     .contact h4 {
@@ -960,4 +988,38 @@ footer.contact h4 {
         justify-content: center;
         flex-flow: row wrap;
     }
+
+/* --------------- Blog Main Page ------------------- */
+.blogs .content-wrapper {
+    justify-content: space-between;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- Blog Content Pages --------------- */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------- END OF ALL CSS ------------------------------------------------- */
