@@ -316,6 +316,54 @@ align-items: center;
 flex-flow: row wrap;
 }
 
+/* ---------------- Blog Content Pages --------------- */
+.card h2 {
+    color: #DB7093;
+}
+
+.card p {
+    color: #FFA500;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    overflow: hidden;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: #e2e3ed;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footerblogcontent {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+
 /*------------------------------------------- Media Screen: Mobile ------------------------------------- */
 
 /* ---------- General Styles ------------ */
@@ -537,27 +585,12 @@ footer.contact h4 {
     justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* ----- Blog Content Pages ----- */
-
-
-
-
-
-
-
-
-
-
+.leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+    font-size: 1.5em;
+}
 
 }
 
@@ -796,25 +829,14 @@ footer.contact h4 {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* ---------------- Blog Content Pages --------------- */
+.leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+    font-size: 1.8em;
 }
 
-
-
-
-
-
-
-
+}
 
 
 /* ----------------------------- Media Screen: Desktop ------------------------------- */
@@ -997,32 +1019,13 @@ footer.contact h4 {
     justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* ---------------- Blog Content Pages --------------- */
-
-
+.leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+    font-size: 2.2em;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 /* ------------------------------------------- END OF ALL CSS ------------------------------------------------- */
