@@ -304,7 +304,7 @@ aside .form {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    font-size: 1em;
+    font-size: 0.6em;
 }
 
 /*--------------------Blog Page-------------------- */
@@ -508,7 +508,8 @@ footer.contact h4 {
 /* -------- Work Page ---------- */
 .experiences .content-wrapper p{
     justify-content: space-between;
-    font-size: 1.1em;
+    font-size: 1.8em;
+    color: #FFA500;
 }
 
 .experiences-content {
@@ -517,19 +518,11 @@ footer.contact h4 {
 
 .experiences h2 {
     width: 100%;
+    font-size: 3em;
 }
 
-.experiences h4,
-.experiences p {
+.experiences h4 {
     font-size: 1.2em;
-    line-height: 1.2;
-    color: #FFA500;
-}
-
-.experiences-content-warning p{
-    color: #e2e3ed;
-    font-style: italic;
-    font-size: 0.8em;
 }
 
 .iframe-container {
@@ -745,7 +738,7 @@ footer.contact h4 {
 
     .mission-content p {
         width: 100%;
-        font-size: 1.35em;
+        font-size: 1.3em;
     }
 
     .contact-section .contact-wrapper h2 {
@@ -765,7 +758,8 @@ footer.contact h4 {
 /* ----- Work Page ----- */
 .experiences .content-wrapper p{
     justify-content: space-between;
-    font-size: 1.3em;
+    font-size: 2.2em;
+    color: #FFA500;
 }
 
 .experiences-content {
@@ -774,19 +768,13 @@ footer.contact h4 {
 
 .experiences h2 {
     width: 100%;
+    font-size: 5em;
 }
 
-.experiences h4,
-.experiences p {
-    font-size: 1.3em;
+.experiences h4 
+.experiences content p {
     line-height: 1.2;
-    color: #FFA500;
-}
-
-.experiences-content-warning p{
-    color: #e2e3ed;
-    font-style: italic;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .iframe-container {
@@ -968,12 +956,13 @@ footer.contact h4 {
     .mission p {
         font-size: 1.8em;
     }
-    }
+    
 
 /* ----------------------- Work Page ---------------------- */
-.experiences .content-wrapper p{
+.experiences .content-wrapper p {
     justify-content: space-between;
-    font-size: 1.8em;
+    font-size: 3em;
+    color: #FFA500
 }
 
 .experiences-content {
@@ -986,17 +975,17 @@ footer.contact h4 {
 
 .experiences h4,
 .experiences p {
-    font-size: 1.8em;
     line-height: 1.2;
-}
-
-.experiences-content-warning {
-    color: #FFA500;
-    font-style: italic;
-    font-size: 1em;
+    font-size: 1.8em;
 }
 
 .iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
         background-position: center;
         display: flex;
         justify-content: center;
