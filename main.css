@@ -74,7 +74,7 @@ a:visited {
     text-decoration: none;
 }
 a:hover {
-   color: #FFA500;
+   color: #DB7093;
    text-decoration: none;
 }
 
@@ -265,7 +265,7 @@ aside .form {
 .features p {
     text-align: center;
     margin: 0;
-    color: #DB7093;
+    color: #FFA500;
 }
 
 /* ------- Reviews ------------ */
@@ -304,6 +304,7 @@ aside .form {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    font-size: 1em;
 }
 
 /*--------------------Blog Page-------------------- */
@@ -486,6 +487,8 @@ footer .copyright {
 .mission-content p {
     width: 100%;
     font-size: 1.1em;
+    color: #FFA500;
+    
 }
 
 .contact-section .contact-wrapper h2 {
@@ -503,8 +506,9 @@ footer.contact h4 {
 }
 
 /* -------- Work Page ---------- */
-.experiences .content-wrapper {
+.experiences .content-wrapper p{
     justify-content: space-between;
+    font-size: 1.1em;
 }
 
 .experiences-content {
@@ -519,12 +523,13 @@ footer.contact h4 {
 .experiences p {
     font-size: 1.2em;
     line-height: 1.2;
+    color: #FFA500;
 }
 
-.experiences-content-warning {
-    color: #FFA500;
+.experiences-content-warning p{
+    color: #e2e3ed;
     font-style: italic;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 
 .iframe-container {
@@ -711,7 +716,7 @@ footer.contact h4 {
     }
 
     footer h4 {
-        font-size: 1.4em;
+        font-size: 2.5em;
         margin-bottom: 30px 0;
     }
 
@@ -758,8 +763,9 @@ footer.contact h4 {
     }
 
 /* ----- Work Page ----- */
-.experiences .content-wrapper {
+.experiences .content-wrapper p{
     justify-content: space-between;
+    font-size: 1.3em;
 }
 
 .experiences-content {
@@ -774,12 +780,13 @@ footer.contact h4 {
 .experiences p {
     font-size: 1.3em;
     line-height: 1.2;
+    color: #FFA500;
 }
 
-.experiences-content-warning {
-    color: #FFA500;
+.experiences-content-warning p{
+    color: #e2e3ed;
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 2em;
 }
 
 .iframe-container {
@@ -920,10 +927,11 @@ footer.contact h4 {
         align-items: center;
         flex-direction: column;
         margin-bottom: 0;
+        font-size: 1.5em;
     }
 
     footer h4 {
-        font-size: 2.5em;
+        font-size: 3em;
         margin-bottom: 30px;
     }
 
@@ -957,9 +965,15 @@ footer.contact h4 {
         font-size: 2em;
     }
 
+    .mission p {
+        font-size: 1.8em;
+    }
+    }
+
 /* ----------------------- Work Page ---------------------- */
-.experiences .content-wrapper {
+.experiences .content-wrapper p{
     justify-content: space-between;
+    font-size: 1.8em;
 }
 
 .experiences-content {
